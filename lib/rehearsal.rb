@@ -7,7 +7,7 @@ module Rehearsal
     base.helper_method :rehearsing?,
                        :rehearsing_with_auth?,
                        :rehearsing_with_banner?
-    base.before_filter :require_http_basic_auth
+    base.before_action :require_http_basic_auth
   end
 
   module ClassMethods
